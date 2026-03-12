@@ -1,631 +1,613 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
+<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <title>Ruyi Wang (王濡翼)</title>
-  <meta name="description" lang="en" content="Personal website of Ruyi Wang (王濡翼), focusing on PEM water electrolysis, ion contamination diagnosis and AI4Science.">
-  <meta name="keywords" lang="en" content="Ruyi Wang,Yulii Wang, 王濡翼, PEM water electrolyzer, ion contamination, AI4Science, Embodied AI" />
-  
-  <!-- 你可以改成自己的 favicon -->
+
+  <title>Ruyi Wang (王濡翼) | Embodied AI & Robotics</title>
+  <meta name="description" lang="en"
+    content="Personal website of Ruyi Wang (王濡翼), focusing on embodied AI, robot learning, reinforcement learning, humanoid locomotion, and physics-informed machine learning.">
+  <meta name="keywords" lang="en"
+    content="Ruyi Wang, 王濡翼, Embodied AI, Robotics, Reinforcement Learning, Humanoid Robot, Locomotion, Sim2Real, AI4Science, Tongji University" />
+
   <link rel="shortcut icon" href="images/ruyi.jpg">
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/academicons.css"/>
+  <link rel="stylesheet" href="css/academicons.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
-  <script src="js/jquery-2.1.3.min.js"> </script>
+  <script src="js/jquery-2.1.3.min.js"></script>
 
   <style>
     li.indented {
-        position: relative;
-        padding-left: 90px;
+      position: relative;
+      padding-left: 90px;
     }
+
     li.indented::before {
-        content: attr(data-date);
-        position: absolute;
-        left: 0;
-        top: 0;
-        white-space: nowrap;
+      content: attr(data-date);
+      position: absolute;
+      left: 0;
+      top: 0;
+      white-space: nowrap;
+    }
+
+    .profile-links {
+      margin-top: 10px;
+    }
+
+    .profile-links a {
+      display: inline-block;
+      margin-right: 14px;
+      font-weight: 600;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .profile-links a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 
-
 <body>
 
-<header class="site-header">
-  <div class="wrapper">
-    <nav class="site-nav">
-      <a href="#" class="menu-icon">
-        <svg viewBox="0 0 18 15">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </a>
-
-      <div class="trigger">
-        <a class="page-link" href="#bio"><b>About</b></a>
-        <a class="page-link" href="#timeline"><b>Experiences</b></a>
-        <a class="page-link" href="#publications"><b>Publications</b></a>
-        <a class="page-link" href="#codebase"><b>GitHub</b></a>
-        <a class="page-link" href="#awards"><b>Honors & Awards</b></a>
-        <a class="page-link" href="#academicservices"><b>Academic Services </b></a>
-      </div>
-    </nav>
-  </div>
-</header>
-
-<!-- 顶部个人名片区域 -->
-<div id="profile-cover" class="cover shallow-bg img-responsive"> 
-  <div id="profile-namecard" class="profile-wrapper wrapper-light">
-    <div id="my-pic" class="profile-col profile-col-1">
-      <!-- 换成你的头像文件 -->
-      <img id="profile-avatar" src="images/ruyi.jpg" alt="Ruyi Wang" class="circle-img border-dark"/>
-    </div>
-    <div id="my-contact" class="profile-col profile-col-2">
-      <div id="my-name" class="text-grey-dark">
-        Ruyi Wang (王濡翼)<br>
-      </div>
-      <div id="my-title" class="text-grey">
-        AI4Science & Hydrogen Energy & Embodied AI, Tongji University
-      </div>
-      <div id="my-email" class="text-grey-light">
-        975967579 [at] qq.com &nbsp;/&nbsp; 2333059 [at] tongji.edu.cn
-      </div>
-    </div>
-
-    <div class="social-media">
-      <!-- Google Scholar 占位 -->
-      <a href="#" target="_blank" class="icon-button linkedin">
-        <i class="ai ai-google-scholar-square icon-linkedin"></i>
-        <span></span>
-      </a>
-
-      <!-- GitHub -->
-      <a href="https://github.com/KudouZala" target="_blank" class="icon-button github">
-        <i class="fa fa-github icon-github"></i>
-        <span></span>
-      </a>
-
-      <!-- LinkedIn -->
-      <a href="https://www.linkedin.com/in/%E6%BF%A1%E7%BF%BC-%E7%8E%8B-031807350/" target="_blank" class="icon-button linkedin">
-        <i class="fa fa-linkedin icon-linkedin"></i>
-        <span></span>
-      </a>
-
-      <!-- 小红书：如果没有可以删掉 -->
-      <a href="#" class="icon-button xiaohongshu" aria-label="小红书" target="_blank" rel="noopener noreferrer">
-        <i>
-          <img src="https://cdn.simpleicons.org/xiaohongshu/FF2D55" alt="" width="45" height="45" style="vertical-align:middle;">
-        </i>
-        <span></span>
-      </a>
-
-      <!-- 邮件（用同济邮箱） -->
-      <a href="mailto:2333059@tongji.edu.cn" target="_blank" class="icon-button linkedin">
-        <i class="fa fa-envelope icon-linkedin"></i>
-        <span></span>
-      </a>
-    </div>
-  </div>
-</div>
-
-<div class="page-content">
-  <div class="wrapper">
-    <div id="bio" class="bio">
-
-      <h1 class="md-heading text-left">
-        <i class="fa fa-id-card" aria-hidden="true"></i>
-        About
-      </h1>
-
-      <div class="bio-body" style="overflow:hidden;">
-        <p>
-          <em>"Everyone is Faker.YOU TOO.ME TOO."</em><br><br>
-          I am <b>Ruyi Wang (王濡翼)</b>, a researcher dedicated to rescuing the
-          <b>PEM water electrolysis system</b> from the invisible threat of
-          <b>ion contamination</b>.
-          <br><br>
-          I was academically born and raised at <b>Tongji University</b>, where I obtained both my
-          <b>Bachelor's</b> and <b>Master's</b> degrees from the <b>School of Automotive Studies</b>.
-          Currently, I conduct <b>AI4Science</b>-driven research on
-          fault diagnosis and physics-informed modeling for
-          <b>PEM fuel cells</b> and <b>PEM water electrolyzers</b> under the supervision of
-          <a href="https://auto.tongji.edu.cn/info/1177/6441.htm" target="_blank">Prof. Xuezhe Wei</a> and
-          <a href="https://auto.tongji.edu.cn/info/1180/7540.htm" target="_blank">Prof. Jiangong Zhu</a>.
-          <br><br>
-          My current projects span from <b>ion contamination diagnosis</b> with multi-modal
-          voltage & impedance data, to <b>physics-informed Transformers</b>, and to
-          <b>embodied AI / legged & humanoid robots</b> for loco-manipulation.
-          If you are interested in collaboration, feel free to reach out via
-          <a href="mailto:2333059@tongji.edu.cn" target="_blank">email</a>.
-        </p>
-
-        <div style="width: 50%; float:left">
-          <h3>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <strong>Research Interests</strong>
-          </h3>
-          <ul>
-            <li>
-              <b>PEM water electrolysis & hydrogen energy</b><br>
-              Degradation mechanisms, ion contamination, stack modeling and monitoring.
-            </li>
-            <li>
-              <b>Data-driven & physics-informed fault diagnosis</b><br>
-              Sliding-window Transformers, electrochemical impedance spectroscopy, hybrid rule + learning frameworks.
-            </li>
-            <li>
-              <b>AI4Science</b><br>
-              Scientific machine learning, surrogate modeling, uncertainty-aware prediction for energy systems.
-            </li>
-            <li>
-              <b>Embodied AI & humanoid / legged robots</b><br>
-              Motion retargeting, RL/IL for loco-manipulation, whole-body evaluation metrics (ZMP, COM, foot contact).
-            </li>
-          </ul>
-        </div>
-
-        <div style="width: 50%; float:right">
-          <h3>
-            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-            <strong>Education</strong>
-          </h3>
-
-          <b>Tongji University, Shanghai, China</b><br>
-          <ul>
-            <li>
-              M.Eng in Automotive Engineering, School of Automotive Studies<br>
-              <span style="color:#777;">Sep 2023 – Jul 2026 (expected)</span>
-            </li>
-            <li>
-              B.Eng in Automotive Engineering, School of Automotive Studies<br>
-              <span style="color:#777;">Sep 2018 – Jun 2023</span>
-            </li>
-          
-          </ul>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- Experiences -->
-    <div id="timeline" class="timeline-brief">
-      <h1 class="md-heading text-left">
-        <i class="fa fa-tasks" aria-hidden="true"></i>
-        Experiences
-      </h1>
-
-      <div class="timeline-body">
-
-
-        <!-- 硕士阶段 -->
-        <div class="timeline-item">
-          <div class="timeline-date">
-            <img class="social-icon" src="images/tongji_logo.png"/>
-            2023.09 – 2026.07 (expected)
-          </div>
-          <div class="timeline-title">
-            M.Eng Student & Researcher @ School of Automotive Studies, Tongji University
-          </div>
-          <div class="timeline-desc">
-            <b>AI4Science for PEM fuel cells and PEM water electrolyzers.</b>
-            <div class="timeline-host">
-              Focus on ion contamination diagnosis, physics-informed modeling, and multi-modal data fusion.<br>
-              <b>Instructors:</b>
-              <a href="https://auto.tongji.edu.cn/info/1177/6441.htm" target="_blank" rel="noopener noreferrer">Xuezhe Wei</a>,
-              <a href="https://auto.tongji.edu.cn/info/1180/7540.htm" target="_blank" rel="noopener noreferrer">Jiangong Zhu</a>,
-              <span>Xiaoping Wu</span>
-            </div>
-          </div>
-        </div>
-                <!-- 智元机器人 Agibot -->
-        <div class="timeline-item">
-          <div class="timeline-date">
-            <img class="social-icon" src="images/agibot_logo.png"/>
-            2025.09 – 2026.01
-          </div>
-          <div class="timeline-title">
-            Robotics Locomotion & Manipulation Algorithm Intern @ Agibot (智元机器人), Shenzhen, China
-          </div>
-          <div class="timeline-desc">
-            <b>Project: Whole-body Loco-manipulation (Sim2Real)</b>
-            <div class="timeline-host">
-              • Debugged AIMRT–ROS SDK communication for full-stack HW/SW integration.<br>
-              • Developed dynamics-constrained motions with Crocoddyl + Pinocchio for dataset expansion.<br>
-              • Built retargeting evaluation methods based on GMR & PHUMA.<br>
-              • Developed VR teleoperation whole-body controller for Agibot Lingxi X2; validated Sim2Sim & Sim2Real.<br>
-              <b>Instructor:</b>
-              <span>Shaohe Du</span>
-            </div>
-          </div>
-        </div>
-        
-        <!-- 小米机器人 -->
-        <div class="timeline-item">
-          <div class="timeline-date">
-            <img class="social-icon" src="images/xiaomi_logo.png"/>
-            2025.04 – 2025.09
-          </div>
-          <div class="timeline-title">
-            Embodied Locomotion Control Algorithm Intern @ Xiaomi Robotics, Beijing, China
-          </div>
-          <div class="timeline-desc">
-            <b>Project: Biped Locomotion with Toe Modeling</b>
-            <div class="timeline-host">
-              • Investigated functional roles of toe DoF in biped locomotion; validated with Cassie-style simulation for stability & gait diversity.<br>
-              • Built motion data processing & visualization pipeline; converted retargeted mocap into RL-ready trajectories for PPO training.<br>
-              • Integrated imitation learning methods (AMP, OMNIH2O) in Legged Gym; refactored DataLoader to support custom trajectory formats.<br>
-              • Trained and debugged PPO locomotion policies in Isaac Gym; optimized rewards, contact forces, and PPO hyperparameters.<br>
-              <b>Instructor:</b>
-              <span>Jianhua Feng</span>
-            </div>
-          </div>
-        </div>
-        
-        <!-- 安克创新 -->
-        <div class="timeline-item">
-          <div class="timeline-date">
-            <img class="social-icon" src="images/anker_logo.png"/>
-            2025.01 – 2025.03
-          </div>
-          <div class="timeline-title">
-            Embodied Perception Algorithm Intern @ Anker Innovations (安克创新), Shanghai, China
-          </div>
-          <div class="timeline-desc">
-            <b>Project: 3D Simulation Asset Generation & Multi-engine Learning Survey</b>
-            <div class="timeline-host">
-              • Surveyed heterogeneous simulation/rendering stacks: Gazebo, MuJoCo, Isaac Sim; Unreal/Unity; ROS2/LCM; NeRF & 3D/4D Gaussian Splatting.<br>
-              • Implemented ROS2 control interfaces in Isaac Sim for robot arm control, sensor publishing, and command streaming.<br>
-              • Built an end-to-end pipeline: image capture → 3DGS reconstruction → point cloud editing → foreground/background separation → sim scene generation.<br>
-              <b>Instructor:</b>
-              <span>Minyi Chen</span>
-            </div>
-          </div>
-        </div>
-        
-        <!-- 蔚来 NIO -->
-        <div class="timeline-item">
-          <div class="timeline-date">
-            <img class="social-icon" src="images/nio_logo.png"/>
-            2024.03 – 2024.10
-          </div>
-          <div class="timeline-title">
-            ADAS Functional Test & Automation Intern @ NIO (蔚来), Shanghai, China
-          </div>
-          <div class="timeline-desc">
-            <b>Project: Regulatory Scenario & State-machine Transition Automated Testing for Production ADAS</b>
-            <div class="timeline-host">
-              • Deployed WorldSim and communication modules (DDS, feature_app) on Ubuntu to support automated ADAS testing.<br>
-              • Modeled regulatory scenarios and authored test cases for state-machine transitions and boundary conditions across AEB/BSD/LCA/SDOW, ACC/NP(NOP)/AHB/ALC, and parking features.<br>
-              • Developed automation scripts for release → run → result collection → report generation; improved efficiency and reproducibility.<br>
-              • Performed log replay (LogSim) for regression testing and bug localization.<br>
-              <b>Instructor:</b>
-              <span>Xinghai Huang</span>
-            </div>
-          </div>
-        </div>
-        
-        <!-- 保时捷工程 -->
-        <div class="timeline-item">
-          <div class="timeline-date">
-            <img class="social-icon" src="images/porsche_logo.png"/>
-            2023.04 – 2023.08
-          </div>
-          <div class="timeline-title">
-            Data Communication Intern @ Porsche Engineering, Shanghai, China
-          </div>
-          <div class="timeline-desc">
-            <b>Project: ADAS Simulation Scenarios & Data Communication Pipeline</b>
-            <div class="timeline-host">
-              • Built a dual-system co-simulation stack (Windows + WSL Ubuntu) with CARLA + ROS for cross-platform communication and integration testing.<br>
-              • Reconstructed real-world Jiading (Shanghai) road segments in CARLA; implemented typical FCW/SCW scenarios (hard brake, cut-in, etc.).<br>
-              • Designed a multi-node middleware pipeline: CARLA sensors → ROS perception → decision logic → socket → Windows QT dashboard visualization.<br>
-              • Developed UI regression automation with Behave + Selenium; built QT/QML dashboard for speed & warning indicators.<br>
-              <b>Instructor:</b>
-              <span>Mojun Qian</span>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- 本科阶段 -->
-        <div class="timeline-item">
-          <div class="timeline-date">
-            <img class="social-icon" src="images/tongji_logo.png"/>
-            2018.09 – 2023.06
-          </div>
-          <div class="timeline-title">
-            B.Eng Student @ School of Automotive Studies, Tongji University
-          </div>
-          <div class="timeline-desc">
-            <div class="timeline-host">
-              Major in Automotive Engineering, with early research in hydrogen energy and fuel cell systems.<br>
-              <b>Instructor:</b>
-              <a href="https://auto.tongji.edu.cn/info/1163/6475.htm" target="_blank" rel="noopener noreferrer">Haifeng Dai</a>,
-            </div>
-          </div>
-        </div>
-
-        
-
-        <br>
-      </div>
-    </div>
-
-    <!-- Publications -->
-    <div id="publications" class="publications">
-      <h1 class="md-heading text-left">
-        <i class="fa fa-file" aria-hidden="true"></i>
-        Publications
-        (<button class="custom-button" id="show-selected-btn"> Show Representative </button> /
-         <button class="custom-button" id="show-all-btn"> Show All </button>)
-      </h1>
-
-      <div class="pub-list">
-
-        <!-- 代表作 / in preparation：离子中毒诊断主论文 -->
-        <div class="pub" data-selected="true">
-          <div class="pub-left">
-            <!-- 占位图片，自行准备 -->
-            <img class="intro-img frame" src="images/ion_diagnosis.png">
-          </div>
-          <div class="pub-right">
-            <div class="title">
-              <a href="https://kudouzala.github.io/ion_detect_page/" target="_blank" rel="noopener noreferrer">
-                SWC-PSWM-ID: A Physics-Structured Latent State World Model for Ion Fault Diagnosis in PEM Electrolyzers
-              </a>
-            </div>
-
-            <div class="authors">
-              <font style="font-size: 11pt;">
-                <b>Ruyi Wang</b>, Co-authors <span style="color:#777;">(to be updated)</span>
-              </font>
-            </div>
-            <div class="publish">
-              <span class="place">In preparation, 2025 <span style="color:#777;">(to be updated)</span></span>
-            </div>
-            <div class="tags">
-              <!-- 预留链接位 -->
-              <!-- [<a class="tag" href="#" target="_blank">Paper</a>] -->
-              <!-- [<a class="tag" href="#" target="_blank">Code</a>] -->
-            </div>
-          </div>
-        </div>
-
-        <!-- 代表作：PEMFC -> PEME 迁移综述 -->
-        <div class="pub" data-selected="true">
-          <div class="pub-left">
-            <img class="intro-img frame" src="images/pefc_peme_review.png">
-          </div>
-          <div class="pub-right">
-            <div class="title">
-              <a href="https://link.springer.com/article/10.1007/s42452-025-07318-1" target="_blank" rel="noopener noreferrer">
-                A Review of the Portability of Fault Diagnosis Methods from PEM Fuel Cells to PEM Water Electrolyzers
-              </a>
-            </div>
-
-            <div class="authors">
-              <font style="font-size: 11pt;">
-                <b>Ruyi Wang</b>, Jiangong Zhu, Haoyu Zhang, Chao Wang, Xiaoping Wu, Ming Wu, Jianqiang Xu, Hao Yuan, Wei Liu, Haifeng Dai &amp; Xuezhe Wei
-              </font>
-            </div>
-
-            <div class="publish">
-              <span class="place">Discover Applied Sciences, 2025</span>
-            </div>
-            <div class="tags">
-              <!-- [<a class="tag" href="#" target="_blank">Paper</a>] -->
-            </div>
-          </div>
-        </div>
-
-        <!-- 如果你已有正式发表的论文，可以继续往下添加条目 -->
-        <div class="pub" data-selected="false">
-          <div class="pub-left">
-            <img class="intro-img frame" src="images/placeholder_pub.png">
-          </div>
-          <div class="pub-right">
-            <div class="title">
-              [Title to be updated]
-            </div>
-            <div class="authors">
-              <font style="font-size: 11pt;">
-                <b>Ruyi Wang</b>, Co-authors <span style="color:#777;">(to be updated)</span>
-              </font>
-            </div>
-            <div class="publish">
-              <span class="place">[Venue / Year to be updated]</span>
-            </div>
-            <div class="tags">
-              <!-- [<a class="tag" href="#" target="_blank">Paper</a>] -->
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- GitHub / Code section：改成你的项目 -->
+  <header class="site-header">
     <div class="wrapper">
-      <div id="codebase" class="bio">
-        <div class="bio-body" style="overflow:hidden;">
-          <h1 class="md-heading text-left">
-            <i class="fa fa-tasks" aria-hidden="true"></i>
-            GitHub
-          </h1>  
-
-          <div class="card-container">
-
-            <div class="github-card">
-              <div>
-                <a class="repo-link" href="https://github.com/KudouZala/ion_detect" target="_blank">
-                  KudouZala/<strong>ion_detect</strong>
-                </a>
-                <span class="label">Project</span>
-              </div>
-              <div class="description">
-                Physics-informed Transformer for ion contamination diagnosis in PEM water electrolyzers (SWC-PC-T-ID framework).
-              </div>
-              <div class="meta">
-                <div class="dot"></div>
-                <div>Python</div>
-              </div>
-            </div>
-
-            <div class="github-card">
-              <div>
-                <a class="repo-link" href="https://github.com/KudouZala/retarget_method_evaluate" target="_blank">
-                  KudouZala/<strong>retarget_method_evaluate</strong>
-                </a>
-                <span class="label">Project</span>
-              </div>
-              <div class="description">
-                A retargeting evaluation toolkit: ZMP/COM analysis, foot contact visualization, and interactive 3D inspection for humanoid robots.
-              </div>
-              <div class="meta">
-                <div class="dot"></div>
-                <div>Python</div>
-              </div>
-            </div>
-
-
-          </div> <!-- card-container -->
-        </div>
-      </div>
-    </div>
-
-    <!-- Honors & Awards -->
-    <div class="wrapper">
-      <div id="awards" class="bio">
-        <h1 class="md-heading text-left">
-          <i class="fa fa-tasks" aria-hidden="true"></i>
-          Selected Honors & Awards
-        </h1>
-        <ul>
-          <li>(to be updated)</li>
-          <!-- 例如：
-          <li>Outstanding Graduate, Tongji University, 20xx.</li>
-          <li>Scholarship Name, Tongji University, 20xx.</li>
-          -->
-        </ul>
-      </div>
-    </div>
-
-
-  </div> <!-- wrapper -->
-</div> <!-- page-content -->
-
-<footer class="site-footer">
-  <div class="wrapper">
-    <div class="footer-col-wrapper">
-      <div class="footer-col  footer-col-1">
-        <ul class="contact-list">
-          <li>Personal Email:</li>
-          <li>
-            <a href="mailto:975967579@qq.com">975967579@qq.com</a><br>
-            <a href="mailto:2333059@tongji.edu.cn">2333059@tongji.edu.cn</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="footer-col  footer-col-2">
-        <!-- Google Scholar 占位 -->
-        <a href="https://scholar.google.com/citations?hl=zh-CN&user=b2FDDPMAAAAJ" target="_blank" rel="noopener noreferrer" class="icon-button github" aria-label="Google Scholar">
-          <i class="ai ai-google-scholar-square icon-github"></i>
-          <span></span>
+      <nav class="site-nav">
+        <a href="#" class="menu-icon">
+          <svg viewBox="0 0 18 15">
+            <path fill="#424242"
+              d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z" />
+            <path fill="#424242"
+              d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z" />
+            <path fill="#424242"
+              d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z" />
+          </svg>
         </a>
-        
-        <a href="https://orcid.org/0009-0005-9987-9004" target="_blank" rel="noopener noreferrer" class="icon-button github" aria-label="ORCID">
-          <i class="ai ai-orcid-square icon-github"></i>
+
+        <div class="trigger">
+          <a class="page-link" href="#bio"><b>About</b></a>
+          <a class="page-link" href="#timeline"><b>Experience</b></a>
+          <a class="page-link" href="#publications"><b>Publications</b></a>
+          <a class="page-link" href="#codebase"><b>Projects</b></a>
+          <a class="page-link" href="#awards"><b>Awards</b></a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div id="profile-cover" class="cover shallow-bg img-responsive">
+    <div id="profile-namecard" class="profile-wrapper wrapper-light">
+      <div id="my-pic" class="profile-col profile-col-1">
+        <img id="profile-avatar" src="images/ruyi.jpg" alt="Ruyi Wang" class="circle-img border-dark" />
+      </div>
+
+      <div id="my-contact" class="profile-col profile-col-2">
+        <div id="my-name" class="text-grey-dark">
+          Ruyi Wang (王濡翼)<br>
+        </div>
+        <div id="my-title" class="text-grey">
+          Embodied AI | Robot Learning | Reinforcement Learning | Tongji University
+        </div>
+        <div id="my-email" class="text-grey-light">
+          975967579 [at] qq.com &nbsp;/&nbsp; 2333059 [at] tongji.edu.cn
+        </div>
+
+        <div class="profile-links">
+          <a href="files/Ruyi_Wang_CV.pdf" target="_blank">CV</a>
+          <a href="https://scholar.google.com/citations?hl=zh-CN&user=b2FDDPMAAAAJ" target="_blank">Google Scholar</a>
+          <a href="https://orcid.org/0009-0005-9987-9004" target="_blank">ORCID</a>
+        </div>
+      </div>
+
+      <div class="social-media">
+        <a href="https://scholar.google.com/citations?hl=zh-CN&user=b2FDDPMAAAAJ" target="_blank"
+          class="icon-button linkedin" aria-label="Google Scholar">
+          <i class="ai ai-google-scholar-square icon-linkedin"></i>
           <span></span>
         </a>
 
-
-        <!-- GitHub -->
-        <a href="https://github.com/KudouZala" target="_blank" class="icon-button github">
+        <a href="https://github.com/KudouZala" target="_blank" class="icon-button github" aria-label="GitHub">
           <i class="fa fa-github icon-github"></i>
           <span></span>
         </a>
 
-        <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/in/%E6%BF%A1%E7%BF%BC-%E7%8E%8B-031807350/" target="_blank" class="icon-button linkedin">
+        <a href="https://www.linkedin.com/in/%E6%BF%A1%E7%BF%BC-%E7%8E%8B-031807350/" target="_blank"
+          class="icon-button linkedin" aria-label="LinkedIn">
           <i class="fa fa-linkedin icon-linkedin"></i>
           <span></span>
         </a>
 
-        <!-- 小红书占位，如无可删除 -->
-        <a href="#" class="icon-button xiaohongshu" aria-label="小红书" target="_blank" rel="noopener noreferrer">
-          <i>
-            <img src="https://cdn.simpleicons.org/xiaohongshu/FF2D55" alt="" width="45" height="45" style="vertical-align:middle;">
-          </i>
+        <a href="mailto:2333059@tongji.edu.cn" target="_blank" class="icon-button linkedin" aria-label="Email">
+          <i class="fa fa-envelope icon-linkedin"></i>
           <span></span>
         </a>
       </div>
-
-      <div class="footer-col footer-col-3">
-        <p class="text">
-          Last updated: Dec, 2025.<br>
-          The style of this website is adapted from
-          <a href="https://jun-cen.com" target="_blank">Jun Cen</a>
-          and <a href="https://leoyuan.site/" target="_blank">Zeqing Yuan</a>.
-        </p>
-      </div>
     </div>
   </div>
-</footer>
 
-<div class="back-to-top">Top</div>
+  <div class="page-content">
+    <div class="wrapper">
+      <div id="bio" class="bio">
 
-<!-- Show Representative / Show All -->
-<script>
-  const showSelectedBtn = document.getElementById('show-selected-btn');
-  const showAllBtn = document.getElementById('show-all-btn');
-  const publications = document.querySelectorAll('.pub');
+        <h1 class="md-heading text-left">
+          <i class="fa fa-id-card" aria-hidden="true"></i>
+          About
+        </h1>
 
-  showSelectedBtn.addEventListener('click', function() {
-    publications.forEach(pub => {
-      if (pub.getAttribute('data-selected') === 'true') {
-        pub.style.display = 'block';
-      } else {
-        pub.style.display = 'none';
-      }
-    });
-  });
+        <div class="bio-body" style="overflow:hidden;">
+          <p>
+            I am <b>Ruyi Wang (王濡翼)</b>, a master's student at <b>Tongji University</b>, working at the
+            intersection of <b>embodied AI, robot learning, reinforcement learning, and physics-informed machine
+              learning</b>.
+            <br><br>
+            My recent work focuses on <b>humanoid and legged robot locomotion</b>, including <b>PPO-based policy
+              training</b>, <b>imitation learning</b>, <b>motion retargeting</b>, and <b>Sim2Real / Sim2Sim
+              transfer</b> on platforms such as <b>Isaac Gym</b>, <b>MuJoCo</b>, and <b>ROS2</b>. I have internship
+            experience in robotics algorithm development at <b>AgiBot</b>, <b>Xiaomi Robotics</b>, and <b>Anker
+              Innovations</b>.
+            <br><br>
+            I also conduct AI4Science research on <b>physics-structured world models</b> for <b>PEM water
+              electrolyzers</b>, with interests in multimodal time-series modeling, electrochemical diagnosis, and
+            scientific machine learning.
+            <br><br>
+            I am actively seeking opportunities in <b>Embodied AI</b>, <b>robotics</b>, and <b>reinforcement
+              learning</b>. Feel free to reach out via
+            <a href="mailto:2333059@tongji.edu.cn" target="_blank">email</a>.
+          </p>
 
-  showAllBtn.addEventListener('click', function() {
-    publications.forEach(pub => {
-      pub.style.display = 'block';
-    });
-  });
-</script>
+          <div style="width: 50%; float:left">
+            <h3>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <strong>Research Interests</strong>
+            </h3>
+            <ul>
+              <li>
+                <b>Embodied AI & Robotics</b><br>
+                Humanoid / legged robot locomotion, loco-manipulation, whole-body control, motion retargeting.
+              </li>
+              <li>
+                <b>Robot Learning</b><br>
+                Reinforcement learning, imitation learning, policy optimization, reward design, contact modeling.
+              </li>
+              <li>
+                <b>Sim2Real & Simulation</b><br>
+                Isaac Gym, Isaac Sim, MuJoCo, ROS2, sim-to-sim / sim-to-real transfer and deployment.
+              </li>
+              <li>
+                <b>AI4Science</b><br>
+                Physics-informed machine learning, multimodal time-series modeling, electrochemical diagnosis for
+                hydrogen systems.
+              </li>
+            </ul>
+          </div>
 
-<!-- Back to top -->
-<script type="text/javascript">
-jQuery(document).ready(function() {
-    var offset = 220;
-    var duration = 500;
-    jQuery(window).scroll(function() {
-        if (jQuery(this).scrollTop() > offset) {
-            jQuery('.back-to-top').fadeIn(duration);
+          <div style="width: 50%; float:right">
+            <h3>
+              <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+              <strong>Education</strong>
+            </h3>
+
+            <b>Tongji University, Shanghai, China</b><br>
+            <ul>
+              <li>
+                M.S. in Energy and Power Engineering (New Energy Power Systems)<br>
+                <span style="color:#777;">Sep 2023 – Jul 2026 (expected)</span>
+              </li>
+              <li>
+                B.Eng. in Vehicle Engineering (Automotive Electronics and Intelligence)<br>
+                <span style="color:#777;">Sep 2018 – Jun 2023</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="timeline" class="timeline-brief">
+        <h1 class="md-heading text-left">
+          <i class="fa fa-tasks" aria-hidden="true"></i>
+          Experience
+        </h1>
+
+        <div class="timeline-body">
+
+          <div class="timeline-item">
+            <div class="timeline-date">
+              <img class="social-icon" src="images/tongji_logo.png" />
+              2023.09 – 2026.07 (expected)
+            </div>
+            <div class="timeline-title">
+              M.S. Student & Researcher @ Tongji University
+            </div>
+            <div class="timeline-desc">
+              <b>Embodied AI and AI4Science research.</b>
+              <div class="timeline-host">
+                Working on humanoid / legged robot learning, reinforcement learning, motion retargeting, and
+                physics-informed modeling for PEM electrochemical systems.<br>
+                <b>Supervisors:</b>
+                <a href="https://auto.tongji.edu.cn/info/1177/6441.htm" target="_blank"
+                  rel="noopener noreferrer">Xuezhe Wei</a>,
+                <a href="https://auto.tongji.edu.cn/info/1180/7540.htm" target="_blank"
+                  rel="noopener noreferrer">Jiangong Zhu</a>,
+                <span>Xiaoping Wu</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">
+              <img class="social-icon" src="images/agibot_logo.png" />
+              2025.09 – 2026.01
+            </div>
+            <div class="timeline-title">
+              Robotics Locomotion & Manipulation Algorithm Intern @ AgiBot, Shenzhen, China
+            </div>
+            <div class="timeline-desc">
+              <b>Project: Whole-body Loco-manipulation (Sim2Real)</b>
+              <div class="timeline-host">
+                • Debugged AIMRT–ROS SDK communication for full-stack HW/SW integration.<br>
+                • Developed dynamics-constrained motions with Crocoddyl + Pinocchio for dataset expansion.<br>
+                • Built VR teleoperation whole-body controller and validated Sim2Sim / Sim2Real transfer.<br>
+                <b>Instructor:</b> <span>Shaohe Du</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">
+              <img class="social-icon" src="images/xiaomi_logo.png" />
+              2025.04 – 2025.09
+            </div>
+            <div class="timeline-title">
+              Embodied Locomotion Control Algorithm Intern @ Xiaomi Robotics, Beijing, China
+            </div>
+            <div class="timeline-desc">
+              <b>Project: Biped Locomotion with Toe Modeling</b>
+              <div class="timeline-host">
+                • Investigated the role of toe DoF in biped locomotion and gait stability using Cassie-style
+                simulation.<br>
+                • Built motion data processing and visualization pipeline for RL-ready trajectories from retargeted
+                mocap data.<br>
+                • Integrated AMP imitation learning in Legged Gym and trained PPO locomotion policies in Isaac
+                Gym.<br>
+                • Optimized rewards, contact forces, and PPO hyperparameters for locomotion stability.<br>
+                <b>Instructor:</b> <span>Jianhua Feng</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">
+              <img class="social-icon" src="images/anker_logo.png" />
+              2025.01 – 2025.03
+            </div>
+            <div class="timeline-title">
+              Embodied Perception Algorithm Intern @ Anker Innovations, Shanghai, China
+            </div>
+            <div class="timeline-desc">
+              <b>Project: 3D Simulation Asset Generation & Multi-engine Survey</b>
+              <div class="timeline-host">
+                • Surveyed Gazebo, MuJoCo, Isaac Sim, Unreal, Unity, ROS2/LCM, and 3D/4D Gaussian Splatting
+                pipelines.<br>
+                • Implemented ROS2 control interfaces in Isaac Sim for robot arm command and sensor streaming.<br>
+                • Built an end-to-end pipeline from image capture to 3DGS reconstruction and simulation scene
+                generation.<br>
+                <b>Instructor:</b> <span>Minyi Chen</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">
+              <img class="social-icon" src="images/nio_logo.png" />
+              2024.03 – 2024.10
+            </div>
+            <div class="timeline-title">
+              ADAS Functional Test & Automation Intern @ NIO, Shanghai, China
+            </div>
+            <div class="timeline-desc">
+              <b>Project: Automated Testing for Production ADAS</b>
+              <div class="timeline-host">
+                • Deployed WorldSim and communication modules on Ubuntu for automated ADAS testing.<br>
+                • Authored regulatory scenario test cases covering AEB, BSD/LCA, ACC, ALC, and parking
+                features.<br>
+                • Developed automation scripts for scenario execution, result collection, and report generation.<br>
+                <b>Instructor:</b> <span>Xinghai Huang</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">
+              <img class="social-icon" src="images/porsche_logo.png" />
+              2023.04 – 2023.08
+            </div>
+            <div class="timeline-title">
+              Data Communication Intern @ Porsche Engineering, Shanghai, China
+            </div>
+            <div class="timeline-desc">
+              <b>Project: ADAS Simulation Scenarios & Communication Pipeline</b>
+              <div class="timeline-host">
+                • Built a dual-system CARLA + ROS co-simulation stack for cross-platform communication and
+                integration.<br>
+                • Reconstructed real-world road segments and implemented FCW / SCW scenarios in CARLA.<br>
+                • Designed a multi-node middleware pipeline from perception to decision to QT dashboard
+                visualization.<br>
+                <b>Instructor:</b> <span>Mojun Qian</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">
+              <img class="social-icon" src="images/tongji_logo.png" />
+              2018.09 – 2023.06
+            </div>
+            <div class="timeline-title">
+              B.Eng. Student @ Tongji University
+            </div>
+            <div class="timeline-desc">
+              <div class="timeline-host">
+                Major in Vehicle Engineering, with early research experience in hydrogen energy and fuel cell
+                systems.<br>
+                <b>Supervisor:</b>
+                <a href="https://auto.tongji.edu.cn/info/1163/6475.htm" target="_blank"
+                  rel="noopener noreferrer">Haifeng Dai</a>
+              </div>
+            </div>
+          </div>
+
+          <br>
+        </div>
+      </div>
+
+      <div id="publications" class="publications">
+        <h1 class="md-heading text-left">
+          <i class="fa fa-file" aria-hidden="true"></i>
+          Publications
+          (<button class="custom-button" id="show-selected-btn">Show Representative</button> /
+          <button class="custom-button" id="show-all-btn">Show All</button>)
+        </h1>
+
+        <div class="pub-list">
+
+          <div class="pub" data-selected="true">
+            <div class="pub-left">
+              <img class="intro-img frame" src="images/ion_diagnosis.png">
+            </div>
+            <div class="pub-right">
+              <div class="title">
+                <a href="https://kudouzala.github.io/ion_detect_page/" target="_blank" rel="noopener noreferrer">
+                  A Physics-Structured Latent State World Model for Ion Contamination Diagnosis in Proton Exchange
+                  Membrane Water Electrolyzers
+                </a>
+              </div>
+
+              <div class="authors">
+                <font style="font-size: 11pt;">
+                  <b>Ruyi Wang</b>, Jiangong Zhu, Haoyu Zhang, Chao Wang, Xiaoping Wu, Ming Wu, Jianqiang Xu, Hao
+                  Yuan, Wei Liu, Haifeng Dai, Xuezhe Wei
+                </font>
+              </div>
+              <div class="publish">
+                <span class="place">Journal of Power Sources, revision / under review, 2026</span>
+              </div>
+              <div class="tags">
+              </div>
+            </div>
+          </div>
+
+          <div class="pub" data-selected="true">
+            <div class="pub-left">
+              <img class="intro-img frame" src="images/pefc_peme_review.png">
+            </div>
+            <div class="pub-right">
+              <div class="title">
+                <a href="https://link.springer.com/article/10.1007/s42452-025-07318-1" target="_blank"
+                  rel="noopener noreferrer">
+                  A Review of the Portability of Fault Diagnosis Methods from PEM Fuel Cells to PEM Water Electrolyzers
+                </a>
+              </div>
+
+              <div class="authors">
+                <font style="font-size: 11pt;">
+                  <b>Ruyi Wang</b>, Jiangong Zhu, Haoyu Zhang, Chao Wang, Xiaoping Wu, Ming Wu, Jianqiang Xu, Hao
+                  Yuan, Wei Liu, Haifeng Dai &amp; Xuezhe Wei
+                </font>
+              </div>
+
+              <div class="publish">
+                <span class="place">Discover Applied Sciences, 2025</span>
+              </div>
+              <div class="tags">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <div id="codebase" class="bio">
+          <div class="bio-body" style="overflow:hidden;">
+            <h1 class="md-heading text-left">
+              <i class="fa fa-code" aria-hidden="true"></i>
+              Selected Projects
+            </h1>
+
+            <div class="card-container">
+
+              <div class="github-card">
+                <div>
+                  <a class="repo-link" href="https://github.com/KudouZala/ion_detect" target="_blank">
+                    KudouZala/<strong>ion_detect</strong>
+                  </a>
+                  <span class="label">Project</span>
+                </div>
+                <div class="description">
+                  Physics-informed Transformer framework for ion contamination diagnosis in PEM water electrolyzers,
+                  integrating multimodal voltage and impedance data.
+                </div>
+                <div class="meta">
+                  <div class="dot"></div>
+                  <div>Python</div>
+                </div>
+              </div>
+
+              <div class="github-card">
+                <div>
+                  <a class="repo-link" href="https://github.com/KudouZala/retarget_method_evaluate" target="_blank">
+                    KudouZala/<strong>retarget_method_evaluate</strong>
+                  </a>
+                  <span class="label">Project</span>
+                </div>
+                <div class="description">
+                  Retargeting evaluation toolkit with ZMP / COM analysis, foot-contact inspection, and interactive 3D
+                  visualization for humanoid robot motion analysis.
+                </div>
+                <div class="meta">
+                  <div class="dot"></div>
+                  <div>Python</div>
+                </div>
+              </div>
+
+              <div class="github-card">
+                <div>
+                  <a class="repo-link" href="https://github.com/KudouZala" target="_blank">
+                    KudouZala/<strong>robot-learning-projects</strong>
+                  </a>
+                  <span class="label">Project</span>
+                </div>
+                <div class="description">
+                  Reinforcement learning, motion retargeting, and locomotion policy training workflows for humanoid and
+                  legged robots based on Isaac Gym, MuJoCo, and ROS ecosystems.
+                </div>
+                <div class="meta">
+                  <div class="dot"></div>
+                  <div>Python</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <div id="awards" class="bio">
+          <h1 class="md-heading text-left">
+            <i class="fa fa-trophy" aria-hidden="true"></i>
+            Selected Honors & Awards
+          </h1>
+          <ul>
+            <li>Second Prize, 2024 New Energy Vehicle Battery AI Fault Prediction Competition (University Group)</li>
+            <li>National First Prize, Formula Student Electric China (“NIO Cup”)</li>
+            <li>Third Prize, Tongji University Physics Competition</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="wrapper">
+      <div class="footer-col-wrapper">
+        <div class="footer-col footer-col-1">
+          <ul class="contact-list">
+            <li>Contact:</li>
+            <li>
+              <a href="mailto:975967579@qq.com">975967579@qq.com</a><br>
+              <a href="mailto:2333059@tongji.edu.cn">2333059@tongji.edu.cn</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-col-2">
+          <a href="https://scholar.google.com/citations?hl=zh-CN&user=b2FDDPMAAAAJ" target="_blank"
+            rel="noopener noreferrer" class="icon-button github" aria-label="Google Scholar">
+            <i class="ai ai-google-scholar-square icon-github"></i>
+            <span></span>
+          </a>
+
+          <a href="https://orcid.org/0009-0005-9987-9004" target="_blank" rel="noopener noreferrer"
+            class="icon-button github" aria-label="ORCID">
+            <i class="ai ai-orcid-square icon-github"></i>
+            <span></span>
+          </a>
+
+          <a href="https://github.com/KudouZala" target="_blank" class="icon-button github" aria-label="GitHub">
+            <i class="fa fa-github icon-github"></i>
+            <span></span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/%E6%BF%A1%E7%BF%BC-%E7%8E%8B-031807350/" target="_blank"
+            class="icon-button linkedin" aria-label="LinkedIn">
+            <i class="fa fa-linkedin icon-linkedin"></i>
+            <span></span>
+          </a>
+        </div>
+
+        <div class="footer-col footer-col-3">
+          <p class="text">
+            Last updated: March 2026.<br>
+            The style of this website is adapted from
+            <a href="https://jun-cen.com" target="_blank">Jun Cen</a>
+            and <a href="https://leoyuan.site/" target="_blank">Zeqing Yuan</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="back-to-top">Top</div>
+
+  <script>
+    const showSelectedBtn = document.getElementById('show-selected-btn');
+    const showAllBtn = document.getElementById('show-all-btn');
+    const publications = document.querySelectorAll('.pub');
+
+    showSelectedBtn.addEventListener('click', function () {
+      publications.forEach(pub => {
+        if (pub.getAttribute('data-selected') === 'true') {
+          pub.style.display = 'block';
         } else {
-            jQuery('.back-to-top').fadeOut(duration);
+          pub.style.display = 'none';
         }
+      });
     });
-    jQuery('.back-to-top').click(function(event) {
+
+    showAllBtn.addEventListener('click', function () {
+      publications.forEach(pub => {
+        pub.style.display = 'block';
+      });
+    });
+  </script>
+
+  <script type="text/javascript">
+    jQuery(document).ready(function () {
+      var offset = 220;
+      var duration = 500;
+      jQuery(window).scroll(function () {
+        if (jQuery(this).scrollTop() > offset) {
+          jQuery('.back-to-top').fadeIn(duration);
+        } else {
+          jQuery('.back-to-top').fadeOut(duration);
+        }
+      });
+      jQuery('.back-to-top').click(function (event) {
         event.preventDefault();
-        jQuery('html, body').animate({scrollTop: 0}, duration);
+        jQuery('html, body').animate({ scrollTop: 0 }, duration);
         return false;
-    })
-});
-</script>
+      })
+    });
+  </script>
 
 </body>
+
 </html>
